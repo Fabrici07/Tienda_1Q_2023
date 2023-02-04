@@ -1,8 +1,96 @@
-#prueba {
-    color: green
+
+#encabezado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    background-color: #496D8D;
+    color: white; 
+    padding: 15px;
 }
 
-.ejemplo {
+#encabezado h1 {
+    display: inline;
+}
+
+.descripcion {
+    font-size: 18px;
     
-    color: blueviolet
+}
+
+#menu {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    background-color: #9B8030;
+    color: black;
+}
+
+#menu a:visited {
+    color: navy
+}
+
+#menu a:hover {
+    background-color: green;
+    color: white;
+}
+
+#barraLateral {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    height: 81%;
+    width: 20%;
+    background-color: #ffde7c;
+    color: black;
+}
+
+#contenido {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    height: 91%;
+    width: 80%;
+    background-color: #496D8D;
+    color: black;
+    overflow: auto;
+}
+
+#piePagina {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 7%;
+    width: 100%;
+    background-color: #33ccff;
+    color: black;
+    text-align: center;
+}
+
+.lineaDireccion {
+    display: inline;
+    
+}
+
+#encabezadoTabla {
+    font-size: 20px;
+    background-color: blue;
+    color: yellow;
+}
+
+#tablaResumen tr{
+    font-size: 25px;
+}
+
+#tablaResumen tr:nth-child(odd){
+    background-color: coral;
+    color: white;
+}
+
+#tablaResumen tr:nth-child(even){
+    background-color: white;
+    color: darkmagenta;
 }

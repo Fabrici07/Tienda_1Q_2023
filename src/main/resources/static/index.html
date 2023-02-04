@@ -7,33 +7,96 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Pagina de leccion 2"/>
         <meta name="keywords" content="html5, css, web, fidelitas"/>
-        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
+    
     <body>
-        <header> class="header"
-            <nav> class="nav>
-                <a href="index.html" class="logo nav-link">TechShop</a>
-                <ul class="nav-menu">
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ejemplo9.html">&LeftTriangleBar;</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ejemplo2.html">&RightTriangleBar;</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="audios.html">&Audios</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="videos.html">&Videos</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="iframes.html">&iframes</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="formularios.html">&formularios</a></li>
-                </ul>         
-            </nav>
-
+        <header id="encabezado">  
+            <h1>Tienda en linea</h1>
+            <br/>
         </header>
-        <div>Proyecto inicial Aplicaciones Web y Patrones</div>
-        <section id="contenido">
-            <header>
-               
-
-            </header>
+        <nav id='menu'>
+            <a href="ejemplo9.html">Atras</a>
+            <a href="index.html">HOME</a>
+            <a href="ejemplo1.html">Adelante</a>
+        </nav>
             
+
+            <aside id="barraLateral">
+                <h2>Productos mas vendidos</h2> 
+                <p>Feugiat <i>est at facilisi metus nascetur class nibh nulla</i> nullam luctus venenatis pulvinar tristique sociosqu et, nisi integer consequat taciti semper fermentum habitant varius enim massa interdum turpis mollis porttitor. Felis penatibus nec cum nisi mattis litora aenean accumsan sodales, est dictum nulla urna nam magnis vestibulum tellus. Eleifend habitasse ac sagittis ut vestibulum magnis penatibus netus, velit metus nibh himenaeos phasellus neque orci sociis arcu, ad tempor leo purus risus donec etiam.</p>
+            </aside>
+
+        <section id="contenido">
+            <h2>Articulos Principales</h2>
+            <article>
+                <header>Asus Vivobook</header>
+                <p class="descripcion"><cite>Feugiat <i>est at facilisi metus nascetur</cite> class nibh nulla</i> nullam luctus venenatis pulvinar tristique sociosqu et, nisi integer consequat taciti semper fermentum habitant varius enim massa interdum turpis mollis porttitor. Felis penatibus nec cum nisi mattis litora aenean accumsan sodales, est dictum nulla urna nam magnis vestibulum tellus. Eleifend habitasse ac sagittis ut vestibulum magnis penatibus netus, velit metus nibh himenaeos phasellus neque orci sociis arcu, ad tempor leo purus risus donec etiam.</p>
+                <figure>
+                    <img src="images/1.png" alt="Asus Vivobook" width="200"/>
+                    <figcaption>Imagen con fines ilustrativos</figcaption>
+                </figure>   
+            </article>
+            <article>
+                <header>Alienware</header>
+                <p class="descripcion"><cite>Feugiat <i>est at facilisi metus nascetur</cite> class nibh nulla</i> nullam luctus venenatis pulvinar tristique sociosqu et, nisi integer consequat taciti semper fermentum habitant varius enim massa interdum turpis mollis porttitor. Felis penatibus nec cum nisi mattis litora aenean accumsan sodales, est dictum nulla urna nam magnis vestibulum tellus. Eleifend habitasse ac sagittis ut vestibulum magnis penatibus netus, velit metus nibh himenaeos phasellus neque orci sociis arcu, ad tempor leo purus risus donec etiam.</p>
+                <figure>
+                    <img src="images/2.png" alt="Alienware" width="200"/>
+                    <figcaption>Mas vendido</figcaption>
+                </figure>   
+            </article>
+            <article>
+                <header>Impresora3D</header>
+                <p class="descripcion"><cite>Feugiat <i>est at facilisi metus nascetur</cite> class nibh nulla</i> nullam luctus venenatis pulvinar tristique sociosqu et, nisi integer consequat taciti semper fermentum habitant varius enim massa interdum turpis mollis porttitor. Felis penatibus nec cum nisi mattis litora aenean accumsan sodales, est dictum nulla urna nam magnis vestibulum tellus. Eleifend habitasse ac sagittis ut vestibulum magnis penatibus netus, velit metus nibh himenaeos phasellus neque orci sociis arcu, ad tempor leo purus risus donec etiam.</p>
+                <figure>
+                    <img src="images/3.png" alt="Impresora3D" width="200"/>
+                    <figcaption>Mas economico</figcaption>
+                </figure>   
+            </article>
+            <br>
+            <br>               
+            <article>
+                <h2>Lineas de productos</h2>
+                <table border='0'>
+                    <thead id='encabezadoTabla'>
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Descripcion</th>
+                        </tr>                         
+                    </thead>
+                    <tbody id='tablaResumen'>
+                        <tr>
+                            <td>1</td>
+                            <td>Teclados</td>                                        
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Monitores</td>                                        
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Portatiles</td>                                        
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Perifericos</td>                                        
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Baterias</td>                                        
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Headsets</td>                                        
+                        </tr>
+                    </tbody>
+                </table>        
+            </article>
         </section>
+        <br><!-- comment -->
+        <br>
         <footer id="piePagina">
-            Derechos reservados &COPY; 2023 <address>Guacima, Alajuela</address><address>Tel 8532 4288</address>
+            Derechos reservados &COPY; 2023 <address class='lineaDireccion'>Guacima, Alajuela</address><address class="lineaDireccion">Tel 8532 4288</address>
         </footer>
     </body>
 </html>
