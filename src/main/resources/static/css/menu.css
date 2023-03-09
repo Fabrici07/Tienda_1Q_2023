@@ -70,8 +70,30 @@ body {
 }
 
 .nav-menu-link:hover {
+    font-size: 22px;
     background-color: lightblue;
-    transition: 0.7s;
+    transition: 1s;
+}
+
+.footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.contenido {
+    background-color: lavender;
+    position: fixed;
+    top: 80px;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    overflow: auto;
 }
 
 

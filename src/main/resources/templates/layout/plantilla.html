@@ -5,11 +5,24 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <header th:fragment="header">
-            <h1 style="color: blue">TechShop</h1>
+        <header th:fragment="header" class="header">
+            <nav class="nav">
+                <a th:href="@{/}" class="logo nav-link">TechShop</a><!-- comment -->
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a th:href="@{/cliente/listado}" class="nav-menu-link nav-link">Clientes</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a th:href="@{/categoria/listado}" class="nav-menu-link nav-link">Categorias</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a th:href="@{/articulo/listado}" class="nav-menu-link nav-link">Articulos</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <footer th:fragment="footer">
-            <p>&COPY; Derechos Reservados 2023</p>
+        <footer th:fragment="footer" class="footer">
+            <p style="font-size: 20px;">&COPY; Derechos Reservados 2023</p>
         </footer>
     </body>
 </html>

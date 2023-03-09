@@ -12,20 +12,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <body>
         <header th:replace="layout/plantilla :: header"/>
         <div class="contenido">
-            <h2>Nuestros Articulos</h2>
+            <h2>Listado de clientes</h2>
+            <a th:href="@{/articulo/nuevo}">Nuevo Articulo</a>
+            <br/>
             <div th:if="${articulos != null and !articulos.empty}">
                 <table border="1">
                     <thead>
                         <tr>
-                            <th>Descripcion</th>
+                            <th>Descripcions</th>
                             <th>Precio</th>
+                            <th>Existencias</th>
+                            <th>Activa</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr th:each="articulo : ${articulos}">
                             <td th:text="${articulo.descripcion}"></td>
                             <td th:text="${#numbers.formatDecimal(articulo.precio,3,2)}" style="text-align: right"></td>
-                            <td><a th:href="@{/carrito/agregar/} + ${articulo.idArticulo}">Agregar</a></td>  
+                            <td th:text="${articulo.existencias}"style="text-align: center"></td>
+                            <td><input type="checkbox" name="activa" th:checked="${articulo.activo}" disabled="true"></td>            
+                            <td><a th:href="@{/articulo/eliminar/} + ${articulo.idArticulo}">Eliminar</a></td>
+                            <td><a th:href="@{/articulo/modificar/} + ${articulo.idArticulo}">Modificar</a></td>
                         </tr>
                     </tbody>
                 </table>

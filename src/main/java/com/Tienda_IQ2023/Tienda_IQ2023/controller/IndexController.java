@@ -29,46 +29,10 @@ public class IndexController {
     @GetMapping("/")
     public String page(Model model) {
         log.info("Ahora utilizando MVC");
-        /*String mensaje = "Estamos en semana 4, saludos!";
-        model.addAttribute("MensajeSaludo", mensaje);
-        
-        Cliente cliente = new Cliente("Fabricio", "Matarrita", "gmail", "dos");
-        Cliente cliente2 = new Cliente("Fabri", "Ramirez", "gmail", "dos");
-        Cliente cliente3 = new Cliente("Juan", "Ramirez", "gmail", "dos");
-        //model.addAttribute("cliente", cliente);
-        
-        List<Cliente> clientes = Arrays.asList(cliente,cliente2,cliente3);
-        model.addAttribute("clientes", clientes);*/
-
-        // var clientes = clienteDao.findAll();
         var clientes = clienteService.getClientes();
         model.addAttribute("clientes", clientes);
 
         return "index";
     }
 
-    @GetMapping("/nuevoCliente")
-    public String nuevoCliente(Cliente cliente) {
-        return "modificarCliente";
-    }
-
-    @PostMapping("/guardarCliente")
-    public String guardarCliente(Cliente cliente) {
-        clienteService.save(cliente);
-        return "redirect:/";
-    }
-
-    @GetMapping("/modificarCliente/{idCliente}")
-    public String modificarCliente(Cliente cliente, Model model) {
-        cliente = clienteService.getCliente(cliente);
-        model.addAttribute("cliente", cliente);
-        return "modificarCliente";
-
-    }
-    
-    @GetMapping("/eliminarCliente/{idCliente}")
-    public String eliminarCliente(Cliente cliente){
-        clienteService.delete(cliente);
-        return "redirect:/";
-    }
 }
